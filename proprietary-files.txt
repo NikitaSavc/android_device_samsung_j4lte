@@ -1,14 +1,18 @@
 
 # Audio
+vendor/lib/vendor.samsung.hardware.audio@1.0.so
 vendor/lib/libaudio-ril.so
 vendor/lib/libaudioroute.so
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libaudiosaplus_sec.so
-
+vendor/bin/hw/android.hardware.audio@2.0-service
+vendor/etc/init/android.hardware.audio@2.0-service.rc
+vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
+vendor/lib/android.hardware.audio.common@2.0-util.so
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
-vendor/lib/hw/audio.primary.universal7570.so
+vendor/lib/hw/audio.primary.exynos7570.so
 vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.usb.default.so
 
@@ -56,21 +60,22 @@ vendor/etc/nxp/voiceexperience/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOT
 vendor/etc/nxp/voiceexperience/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
 vendor/lib/libbt-vendor.so
-vendor/lib/vendor.samsung.hardware.bluetooth@1.0.so
+vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
+vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 
 # Bluetooth-AptX
 lib/libaptX_encoder.so
 
 # Camera
-vendor/lib/hw/camera.universal7570.so
+vendor/lib/hw/camera.exynos7570.so
 vendor/lib/libgui_vendor.so
 
 # DRM
 vendor/lib/liboemcrypto.so
 
 # DRM-Widevine
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
@@ -78,9 +83,9 @@ vendor/lib/mediadrm/libwvdrmengine.so
 # Display-Hardware
 vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
 vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/gralloc.exynos5.so
-vendor/lib/hw/hwcomposer.exynos5.so
-vendor/lib/hw/memtrack.universal7570.so
+vendor/lib/hw/gralloc.exynos7570.so
+vendor/lib/hw/hwcomposer.exynos7570.so
+vendor/lib/hw/memtrack.exynos7570.so
 
 # Dolby
 vendor/etc/dolby/dax-default.xml
@@ -94,18 +99,18 @@ vendor/firmware/setfile_3l2.bin
 vendor/firmware/setfile_5e3.bin
 
 # GPS
-vendor/bin/hw/vendor.samsung.hardware.gnss@1.0-service
-vendor/etc/init/vendor.samsung.hardware.gnss@1.0-service.rc
-vendor/lib/hw/android.hardware.gnss@1.1-impl.so
-vendor/lib/hw/vendor.samsung.hardware.gnss@1.0-impl.so
-vendor/lib/vendor.samsung.hardware.gnss@1.0.so
+vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
+vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
+vendor/lib/hw/android.hardware.gnss@2.0-impl.so
+vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl.so
+vendor/lib/vendor.samsung.hardware.gnss@2.0.so
 
 # GPS-Hardware
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
+vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.exynos7570.so
 
 # Graphics
@@ -272,78 +277,69 @@ vendor/lib/hw/power.default.so
 -app/ImsSettings/ImsSettings.apk
 
 # Samsung
+vendor/bin/hw/vendor.samsung.hardware.tlc.ucm@1.0-service
 vendor/bin/hw/android.hardware.health@2.0-service.samsung
-vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service
-vendor/bin/hw/vendor.samsung.hardware.light@2.0-service
-vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.radio.configsvc@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.vibrator@1.0-service
+vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
+vendor/bin/hw/vendor.samsung.hardware.light@3.0-service
+vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
+vendor/bin/hw/vendor.samsung.hardware.vibrator@2.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
-vendor/bin/vendor.samsung.security.proca@1.0-service
-vendor/bin/vendor.samsung.security.sem@1.0-service
-vendor/bin/vendor.samsung.security.skpm@1.0-service
-vendor/bin/vendor.samsung.security.wvkprov_server@1.0-service
+vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
+vendor/bin/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service
+vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
 vendor/etc/init/android.hardware.health@2.0-service.samsung.rc
-vendor/etc/init/vendor.samsung.hardware.camera.provider@2.4-service.rc
-vendor/etc/init/vendor.samsung.hardware.light@2.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.radio.configsvc@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.vibrator@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.sem@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.skpm@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.wvkprov_server@1.0-service.rc
+vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc
+vendor/etc/init/vendor.samsung.hardware.light@3.0-service.rc
+vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
+vendor/etc/init/vendor.samsung.hardware.vibrator@2.0-service.rc
+vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc
 vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc
+vendor/lib/vendor.samsung_slsi.hardware.configstore-utils.so
 vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc
-vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
-vendor/lib/hw/vendor.samsung.hardware.light@2.0-impl.so
-vendor/lib/libhumantracking_util.camera.samsung.so
+vendor/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc
+vendor/etc/init/vaultkeeper_common.rc
+vendor/lib/vendor.samsung.hardware.health@1.0.so
+vendor/lib/libdsms_vendor.so
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
+vendor/lib/hw/vendor.samsung.hardware.light@3.0-impl.so
 vendor/lib/libOpenCv.camera.samsung.so
-vendor/lib/libremotedesktop_client.knox.samsung.so
 vendor/lib/libsamsungDiamondVoice.so
 vendor/lib/libSamsungPostProcessConvertor.so
-vendor/lib/libsmart_cropping.camera.samsung.so
-vendor/lib/libsomp.camera.samsung.so
 vendor/lib/libxcv.camera.samsung.so
 vendor/lib/lib_SamsungRec_06005.so
 vendor/lib/lib_soundaliveresampler.so
-vendor/lib/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/soundfx/libsamsungSoundbooster_plus.so
-vendor/lib/system.vendor.samsung.frameworks.ucm.wifi@1.0.so
+vendor/lib/vendor.samsung.hardware.tlc.ucm@1.0-impl.so
+vendor/lib/libhal.wsm.samsung.so
 vendor/lib/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib/vendor.samsung.camera.device@3.2-impl.so
-vendor/lib/vendor.samsung.camera.device@3.3-impl.so
-vendor/lib/vendor.samsung.camera.device@3.4-impl.so
-vendor/lib/vendor.samsung.frameworks.ucm.wifi@1.0.so
+vendor/lib/vendor.samsung.camera.device@4.0-impl.so
+vendor/lib/vendor.samsung.frameworks.security.ucm.crypto@1.0.so
 vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
-vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
-vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
-vendor/lib/vendor.samsung.hardware.camera.device@3.4.so
-vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
-vendor/lib/vendor.samsung.hardware.camera.provider@2.5.so
-vendor/lib/vendor.samsung.hardware.exthealth@1.0.so
-vendor/lib/vendor.samsung.hardware.light@2.0.so
-vendor/lib/vendor.samsung.hardware.miscpower@1.0.so
-vendor/lib/vendor.samsung.hardware.radio.channel@1.0_vendor.so
-vendor/lib/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so
-vendor/lib/vendor.samsung.hardware.radio.secbridge@1.0_vendor.so
-vendor/lib/vendor.samsung.hardware.radio.sechook@1.0_vendor.so
-vendor/lib/vendor.samsung.hardware.radio@1.2_vendor.so
-vendor/lib/vendor.samsung.hardware.vibrator@1.0.so
-vendor/lib/vendor.samsung.hardware.wifi.hostapd@1.0.so
-vendor/lib/vendor.samsung.hardware.wifi.supplicant@1.0.so
-vendor/lib/vendor.samsung.hardware.wifi@1.0.so
-vendor/lib/vendor.samsung.security.proca@1.0.so
-vendor/lib/vendor.samsung.security.sem@1.0.so
-vendor/lib/vendor.samsung.security.skpm@1.0.so
-vendor/lib/vendor.samsung.security.vaultkeeper_server@1.0.so
-vendor/lib/vendor.samsung.security.wvkprov_server@1.0.so
+vendor/lib/vendor.samsung.hardware.camera.device@4.0.so
+vendor/lib/vendor.samsung.hardware.light@3.0.so
+vendor/lib/vendor.samsung.hardware.miscpower@2.0.so
+vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
+vendor/lib/vendor.samsung.hardware.radio.bridge@2.0_vendor.so
+vendor/lib/vendor.samsung.hardware.radio.channel@2.0_vendor.so
+vendor/lib/vendor.samsung.hardware.radio@2.0_vendor.so
+vendor/lib/vendor.samsung.hardware.vibrator@2.0.so
+vendor/lib/vendor.samsung.hardware.wifi.hostapd@2.0.so
+vendor/lib/vendor.samsung.hardware.wifi.supplicant@2.0.so
+vendor/lib/vendor.samsung.hardware.wifi@2.0.so
+vendor/lib/vendor.samsung.hardware.security.proca@2.0.so
+vendor/lib/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so
+vendor/lib/vendor.samsung.hardware.security.vaultkeeper@1.0.so
 vendor/lib/vendor.samsung_slsi.hardware.configstore-utils.so
 vendor/lib/vendor.samsung_slsi.hardware.configstore@1.0.so
 vendor/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 
 # Sensors
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
+vendor/bin/hw/android.hardware.sensors@1.0-service
+vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/hw/sensors.universal7570.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libsensorndkbridge.so
@@ -364,9 +360,11 @@ vendor/bin/hw/gpsd
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/rild
-vendor/bin/icd
-vendor/bin/pm_proxy_helper
+vendor/bin/vendor.samsung.hardware.security.vaultkeeper@1.0-service
+vendor/bin/vaultkeeperd
+
 vendor/bin/secure_storage_daemon
+vendor/lib/vendor.samsung.hardware.security.securestorage@3.0.so
 vendor/bin/tzdaemon
 vendor/bin/wlbtd
 vendor/bin/wvkprov
@@ -389,6 +387,7 @@ vendor/etc/init/pa_daemon_teegris.rc
 vendor/etc/init/secure_storage_daemon.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_slsi.rc
+vendor/etc/init/wsm-service.rc
 vendor/etc/mixer_gains.xml
 vendor/etc/playback_record_audio_policy_configuration.xml
 vendor/etc/plmn_delta.bin
@@ -402,8 +401,7 @@ vendor/etc/somxreg.conf
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
-vendor/lib/hw/gps.default.so
-vendor/lib/libcrypto.so
+vendor/lib/liboemcrypto.so
 vendor/lib/libcsc.so
 vendor/lib/libexynoscamera.so
 vendor/lib/libexynoscamera3.so
@@ -430,13 +428,11 @@ vendor/lib/libsec-ril-dsds.so
 vendor/lib/libsec-ril.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecnativefeature.so
-vendor/lib/libssl.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_omx_utils.so
 vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libstagefright_soft_g711dec.so
-vendor/lib/libstagefright_soft_rawdec.so
-vendor/lib/libstagefright_soft_vorbisdec.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
 vendor/lib/libstagefright_xmlparser.so
 vendor/lib/libstainkiller.so
 vendor/lib/libteecl.so
@@ -466,18 +462,19 @@ vendor/lib/soundfx/libmyspace.so
 vendor/lib/soundfx/libplaybackrecorder.so
 vendor/lib/soundfx/libswdap.so
 vendor/tee/00000000-0000-0000-0000-00000000dead
+vendor/tee/00000000-0000-0000-0000-4b45594d5354
 vendor/tee/00000000-0000-0000-0000-000000534b4d
-vendor/tee/00000000-0000-0000-0000-0000534b504d
+vendor/tee/00000000-0000-0000-0000-564c544b5052
 vendor/tee/00000000-0000-0000-0000-0050524f4341
+vendor/tee/00000000-0000-0000-0000-0053545354ab
+vendor/tee/00000000-0000-0000-0000-474154454b45
 vendor/tee/00000000-0000-0000-0000-00535453540a
 vendor/tee/00000000-0000-0000-0000-00535453540c
-vendor/tee/00000000-0000-0000-0000-0053545354ab
 vendor/tee/00000000-0000-0000-0000-00575644524d
-vendor/tee/00000000-0000-0000-0000-474154454b45
-vendor/tee/00000000-0000-0000-0000-4b45594d5354
 vendor/tee/00000000-0000-0000-0000-505256544545
 vendor/tee/00000000-0000-0000-0000-534543445256
 vendor/tee/00000000-0000-0000-0000-535355504341
+vendor/tee/ffffffff-0000-0000-0000-000000000030
 vendor/tee/driver/00000000-0000-0000-0000-000046495645
 vendor/tee/driver/00000000-0000-0000-0000-00535453540b
 vendor/tee/startup.tzar
