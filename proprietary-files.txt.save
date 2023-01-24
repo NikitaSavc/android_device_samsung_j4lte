@@ -1,21 +1,5 @@
-# System
-# -system/app/ImsSettings/ImsSettings.apk
-system/lib/libaptX_encoder.so
-system/lib/extractors/libsaacextractor.so
-system/lib/extractors/libsecmp3extractor.so
-system/lib/extractors/libsflacextractor.so
-system/lib/extractors/libsaviextractor.so
-system/lib/extractors/libsecmp4extractor.so
-system/lib/extractors/libsflvextractor.so
-system/lib/extractors/libsecamrextractor.so
-system/lib/extractors/libsecmpeg2extractor.so
-system/lib/extractors/libsmkvextractor.so
-system/lib/extractors/libsecmidiextractor.so
-system/lib/extractors/libsecoggextractor.so
-system/lib/extractors/libswmfextractor.so
-system/lib/extractors/libsecmkvextractor.so
-system/lib/extractors/libsecwavextractor.so
-
+# Knox
+# vendor/lib/libknox_remotedesktopclient.knox.samsung.so
 # Audio
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
 vendor/lib/libaudio-ril.so
@@ -23,6 +7,9 @@ vendor/lib/libaudioroute.so
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libaudiosaplus_sec.so
+vendor/bin/hw/android.hardware.audio@2.0-service
+vendor/etc/init/android.hardware.audio@2.0-service.rc
+vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
 vendor/lib/android.hardware.audio.common@2.0-util.so
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
@@ -82,7 +69,7 @@ lib/libaptX_encoder.so
 
 # Camera
 vendor/lib/hw/camera.exynos7570.so
-vendor/lib/vendor.samsung.hardware.camera.provider@3.0.so
+vendor/lib/libgui_vendor.so
 
 # DRM
 vendor/lib/liboemcrypto.so
@@ -102,7 +89,7 @@ vendor/lib/hw/hwcomposer.exynos7570.so
 vendor/lib/hw/memtrack.exynos7570.so
 
 # Dolby
-vendor/etc/dolby/dax-default.xml
+vendor/etc/dolby/dax-default.xl
 vendor/etc/media_codecs_dolby_audio.xml
 
 # Firmware
@@ -129,8 +116,7 @@ vendor/lib/hw/gatekeeper.exynos7570.so
 
 # Graphics
 vendor/lib/egl/libGLES_mali.so
-vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc
@@ -380,7 +366,8 @@ vendor/bin/hw/rild
 vendor/bin/vendor.samsung.hardware.security.vaultkeeper@1.0-service
 vendor/bin/vaultkeeperd
 vendor/lib/libvkservice.so
-vendor/lib/vendor.samsung.frameworks.security.dsms@1.0.so
+
+
 vendor/bin/secure_storage_daemon
 vendor/lib/vendor.samsung.hardware.security.securestorage@3.0.so
 vendor/bin/tzdaemon
