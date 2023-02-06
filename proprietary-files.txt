@@ -1,20 +1,20 @@
 # System
 # -system/app/ImsSettings/ImsSettings.apk
 system/lib/libaptX_encoder.so
-system/lib/extractors/libsaacextractor.so
-system/lib/extractors/libsecmp3extractor.so
-system/lib/extractors/libsflacextractor.so
-system/lib/extractors/libsaviextractor.so
-system/lib/extractors/libsecmp4extractor.so
-system/lib/extractors/libsflvextractor.so
-system/lib/extractors/libsecamrextractor.so
-system/lib/extractors/libsecmpeg2extractor.so
-system/lib/extractors/libsmkvextractor.so
-system/lib/extractors/libsecmidiextractor.so
-system/lib/extractors/libsecoggextractor.so
-system/lib/extractors/libswmfextractor.so
-system/lib/extractors/libsecmkvextractor.so
-system/lib/extractors/libsecwavextractor.so
+#system/lib/extractors/libsaacextractor.so
+#system/lib/extractors/libsecmp3extractor.so
+#system/lib/extractors/libsflacextractor.so
+#system/lib/extractors/libsaviextractor.so
+#system/lib/extractors/libsecmp4extractor.so
+#system/lib/extractors/libsflvextractor.so
+#system/lib/extractors/libsecamrextractor.so
+#system/lib/extractors/libsecmpeg2extractor.so
+#system/lib/extractors/libsmkvextractor.so
+#system/lib/extractors/libsecmidiextractor.so
+#system/lib/extractors/libsecoggextractor.so
+#system/lib/extractors/libswmfextractor.so
+#system/lib/extractors/libsecmkvextractor.so
+#system/lib/extractors/libsecwavextractor.so
 
 # Audio
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
@@ -23,17 +23,12 @@ vendor/lib/libaudioroute.so
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libaudiosaplus_sec.so
-vendor/lib/android.hardware.audio.common@2.0-util.so
+
 # Audio-Hardware
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.exynos7570.so
-vendor/lib/hw/audio.r_submix.default.so
-vendor/lib/hw/audio.usb.default.so
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service
 vendor/etc/bluetooth/bt_did.conf
-vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
 vendor/etc/nxp/speechassist/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
 vendor/etc/nxp/speechassist/BargeInDriving/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
 vendor/etc/nxp/voiceexperience/mVoIP/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt
@@ -72,8 +67,6 @@ vendor/etc/nxp/voiceexperience/WifiCallingHAC/Tx_ControlParams_NARROWBAND_BLUETO
 vendor/etc/nxp/voiceexperience/WifiCallingHAC/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt
 vendor/etc/nxp/voiceexperience/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
 vendor/etc/nxp/voiceexperience/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
-vendor/lib/libbt-vendor.so
 vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
 vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 
@@ -81,7 +74,6 @@ vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 lib/libaptX_encoder.so
 
 # Camera
-vendor/lib/hw/camera.exynos7570.so
 vendor/lib/vendor.samsung.hardware.camera.provider@3.0.so
 
 # DRM
@@ -95,8 +87,6 @@ vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Display-Hardware
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.exynos7570.so
 vendor/lib/hw/hwcomposer.exynos7570.so
 vendor/lib/hw/memtrack.exynos7570.so
@@ -115,26 +105,16 @@ vendor/firmware/setfile_5e3.bin
 # GPS
 vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
 vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
-vendor/lib/hw/android.hardware.gnss@2.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl.so
 vendor/lib/vendor.samsung.hardware.gnss@2.0.so
 
-# GPS-Hardware
-
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.exynos7570.so
 
 # Graphics
 vendor/lib/egl/libGLES_mali.so
-vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
+
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service
-vendor/etc/init/android.hardware.keymaster@3.0-service.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib/libkeymaster2_mdfpp.so
 vendor/lib/libkeymaster3device.so
 vendor/lib/libkeymaster_helper_vendor.so
@@ -148,12 +128,8 @@ vendor/lib/libkeystore-wifi-hidl.so
 # Listen
 
 # Media
-vendor/lib/libstagefright_foundation.so
 vendor/lib/libstagefright_soft_ac4dec.so
 vendor/lib/libstagefright_soft_ddpdec.so
-
-# Media-Hardware
-vendor/lib/libstagefrighthw.so
 
 # NFC
 vendor/etc/nxp/AzControlParams_SPEAKER.txt
@@ -278,12 +254,6 @@ vendor/lib/libpreprocessing_nxp.so
 
 # Postprocessing
 
-# Power-Hardware
-vendor/bin/hw/android.hardware.power@1.0-service
-vendor/etc/init/android.hardware.power@1.0-service.rc
-vendor/lib/hw/android.hardware.power@1.0-impl.so
-vendor/lib/hw/power.default.so
-
 # QMI
 
 # Radio
@@ -297,7 +267,6 @@ vendor/bin/hw/android.hardware.health@2.0-service.samsung
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
 vendor/bin/hw/vendor.samsung.hardware.light@3.0-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
-vendor/bin/hw/vendor.samsung.hardware.vibrator@2.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
 vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
@@ -307,7 +276,6 @@ vendor/etc/init/android.hardware.health@2.0-service.samsung.rc
 vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.light@3.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.vibrator@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service.rc
 vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc
 vendor/lib/vendor.samsung_slsi.hardware.configstore-utils.so
@@ -342,7 +310,6 @@ vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0_vendor.so
 vendor/lib/vendor.samsung.hardware.radio.channel@2.0_vendor.so
 vendor/lib/vendor.samsung.hardware.radio@2.0_vendor.so
-vendor/lib/vendor.samsung.hardware.vibrator@2.0.so
 vendor/lib/vendor.samsung.hardware.wifi.hostapd@2.0.so
 vendor/lib/vendor.samsung.hardware.wifi.supplicant@2.0.so
 vendor/lib/vendor.samsung.hardware.wifi@2.0.so
@@ -354,17 +321,10 @@ vendor/lib/vendor.samsung_slsi.hardware.configstore@1.0.so
 vendor/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 
 # Sensors
-vendor/etc/init/android.hardware.sensors@1.0-service.rc
-vendor/bin/hw/android.hardware.sensors@1.0-service
-vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/hw/sensors.universal7570.so
 vendor/lib/libsensorlistener.so
-vendor/lib/libsensorndkbridge.so
 
 # Time
-
-# Vibrator
-vendor/lib/hw/vibrator.default.so
 
 # WiFi
 
@@ -435,8 +395,6 @@ vendor/lib/libfloatingfeature.so
 vendor/lib/libhdmi.so
 vendor/lib/libHMT.so
 vendor/lib/libhwcutils.so
-vendor/lib/libhwjpeg.so
-vendor/lib/libhwminijail.so
 vendor/lib/libion_exynos.so
 vendor/lib/libLifevibes_lvverx.so
 vendor/lib/libLifevibes_lvvetx.so

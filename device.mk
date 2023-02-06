@@ -66,9 +66,6 @@ PRODUCT_PACKAGES += \
     mx_log_collection.sh \
     mx_logger.sh \
     mx_logger_dump.sh \
-# Seccomp
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
 
 # WiFi
 PRODUCT_COPY_FILES += \
